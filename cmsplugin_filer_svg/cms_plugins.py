@@ -11,14 +11,15 @@ from django.utils.translation import ugettext_lazy as _
 class SvgPluginPublisher(CMSPluginBase):
     model = SvgPluginEditor
     name = _("Svg Plugin")
-    #render_template = "svg/svg.html"
+    render_template = "cmsplugin_filer_svg/svg_plugin.html"
     text_enabled = True
-    admin_preview = False
+    admin_preview = True
 
     def render(self, context, instance, placeholder):
         context.update({
-            'svg':instance,
+            'object':instance,
             'placeholder':placeholder,
         })
         return context
 plugin_pool.register_plugin(SvgPluginPublisher)
+

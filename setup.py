@@ -6,13 +6,13 @@ setup (
   name = 'django-filer-svg',
   version = '0.1',
   packages = find_packages(),
-  #install_requires=[
-  #                  'django',
-  #                  'django-cms',
-  #                  'django-filer'
-  #                  'django-south',
-  #                  ],
-  install_requires=[],
+  install_requires=[
+                    'django',
+                    'django-cms',
+                    'django-filer',
+                    'django-south',
+                  ],
+  
   author = 'Adrian Cooke',
   author_email = 'adriangerardcooke@gmail.com',
   description = 'Django Filer CMS SVG plugin.',

@@ -10,7 +10,7 @@ setup (
                     'django',
                     'django-cms',
                     'django-filer',
-                    'django-south',
+                    'South',
                   ],
   
   author = 'Adrian Cooke',
